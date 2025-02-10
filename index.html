@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños Mi Amor</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="decoraciones">
+        <span class="emoji-decoracion" style="left: 7%; animation-delay: 0s;">🎈</span>
+        <span class="emoji-decoracion" style="left: 23%; animation-delay: 1s;">🎉</span>
+        <span class="emoji-decoracion" style="left: 75%; animation-delay: 2s;">🎁</span>
+        <span class="emoji-decoracion" style="left: 90%; animation-delay: 3s;">🎂</span>
+    </div>
+
+    <div class="container">
+
+        <div class="header">
+            <h1 class="emoji">🎂 </h1>
+            <h1> Feliz Cumpleaños <br>al Amor de mi Vida</h1>
+            <h1 class="emoji"> 💖</h1>
+        </div>
+
+        <img src="m1.jpg" alt="Imagen ninda tuya" class="imagen">
+
+        <p>Felices 22 años mi vida, espero que este sea un excelente año para ti, lleno de cositas buenas porque de verdad que te lo mereces! 💕</p>
+        <p>A pesar de que estemos lejos, te quiero desear lo mejor y que disfrutes mucho en tu día amor,  y que ya pronto vamos a estar juntos y te daré tus regalitos. 🎈🎉</p>
+        <p>Te amo muchísimo wawita, y espero seguir celebrando tus cumpleaños a tu lado durante mucho tiempo más! 💓</p>
+        <a class="button" onclick="mostrarSorpresa()">Haz clic aquí para un mensajito especial aleatorio</a>
+    </div>
+
+    <div class="ventana-overlay" id="ventanaOverlay"></div>
+
+    <div class="ventana" id="mensajeVentana">
+        <button class="close" onclick="cerrarVentana()">X</button>
+        <p id="mensajeTexto"></p>
+    </div>
+
+    <script>
+        function mostrarSorpresa() {
+            const mensajes = [
+            "Te amo demasiado! 💖",
+            "Eres la persona más especial en mi vida 😘",
+            "Espero que tengas un día increíble mi amor! ",
+            "Quisiera estar contigo ahora wawita" ,
+            "Gracias por ser como eres, te amo muchísimo ❤️",
+            "Eres mi persona favorita en todo el mundo 🌐",
+            "Te mando muchos besitos y abrazos 🤗",
+            "Haces mis días mucho más felices! 😊",
+            "Quiero estar contigo por siempre wawita!",
+            "Me haces muy muy feliz 😄",
+            "Te amo mucho mucho miamor! 💕",
+            "Me gustas demasiado! 🥰",
+            "Eres la mejor polola del mundo! 💑",
+            "Te ves muy bonita hoy 😍",
+            "Feliz cumple mi vida, te mereces lo mejor! 🎉",
+            "Quiero seguir a tu lado por mucho tiempo más ❣"
+            ];
+
+            const mensajeAleatorio = mensajes[Math.floor(Math.random() * mensajes.length)];
+            document.getElementById('mensajeTexto').textContent = mensajeAleatorio;
+            document.getElementById('mensajeVentana').style.display = 'block';
+            document.getElementById('ventanaOverlay').style.display = 'block';
+        }
+
+        function cerrarVentana() {
+            document.getElementById('mensajeVentana').style.display = 'none';
+            document.getElementById('ventanaOverlay').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
