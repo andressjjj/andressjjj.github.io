@@ -6,15 +6,16 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .container {
-    max-width: 600px;
+    max-width: 500px;
+
     background: white;
-    padding: 30px;
+    padding: 20px 30px;
     border-radius: 15px;
     box-shadow: 0 6px 12px 10px rgba(139, 2, 9, 0.3);
     position: relative;
@@ -35,28 +36,29 @@ body {
     vertical-align: middle;
 }
 .emoji {
-    padding: 1rem;
+    padding: 1.05rem;
 }
 h1 {
     color: #ff4081;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-family: 'Great Vibes', cursive;
     animation: textoPop 2s ease-in-out;
+    margin-top: 1rem;
 }
 .imagen {
     width: 80%;
-    max-width: 250px;
+    max-width: 200px;
     border-radius: 15px;
     margin: 10px 0;
     animation: flotar 4s infinite alternate ease-in-out;
 }
 p {
-    font-size: 1.2rem;
+    font-size: 1.05rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #555;
     line-height: 1.8;
     animation: textoFadeIn 2s ease-in-out;
-    margin: 0.7rem auto;
+    margin: 0.5rem auto;
 }
 .decoraciones {
     position: absolute;
@@ -69,8 +71,8 @@ p {
 }
 .emoji-decoracion {
     position: absolute;
-    top: -100px;
-    font-size: 2.5rem;
+    top: -130px;
+    font-size: 2rem;
     animation: decoracionesFlotantes 5s infinite ease-in-out;
 }
 @media (max-width: 600px) {
@@ -103,23 +105,20 @@ p {
     display: inline-block;
     background-color: #ff4081;
     color: white;
-    padding: 15px 25px;
+    padding: 8px 25px;
     border-radius: 15px;
     text-decoration: none;
-    font-size: 1.2rem;
-    margin-top: 10px;
+    font-size: 1.05rem;
+    margin-top: 0.5rem;
     transition: background 0.3s ease-in-out;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
 }
-.button:hover {
-    background-color: #ff79a9;
-    cursor: pointer;
-}
+
 @media (max-width: 600px) {
     .button {
         padding: 12px 20px;
-        font-size: 1.2rem;
+        font-size: 1.05rem;
     }
 }
 .ventana-overlay {
@@ -149,6 +148,7 @@ p {
 }
 .ventana p {
     font-size: 1.3rem;
+    font-weight: lighter;
     color: #333;
     padding-bottom: 10px;
     animation: textoFadeIn 1s ease-in-out;
@@ -162,8 +162,13 @@ p {
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    font-size: 1.2rem;
+    font-size: 1.05rem;
     margin-left: auto;
     margin-top: -15px;
     margin-right: -15px;
+    transition: background 0.3s ease-in-out;
+}
+.button:hover, .close:hover {
+    background-color: #ff79a9;
+    cursor: pointer;
 }
