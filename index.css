@@ -43,7 +43,7 @@ h1 {
     font-size: 2.2rem;
     font-family: 'Great Vibes', cursive;
     animation: textoPop 2s ease-in-out;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 .imagen {
     width: 80%;
@@ -54,7 +54,7 @@ h1 {
 }
 p {
     font-size: 1.05rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     color: #555;
     line-height: 1.8;
     animation: textoFadeIn 2s ease-in-out;
@@ -111,7 +111,7 @@ p {
     font-size: 1.05rem;
     margin-top: 0.5rem;
     transition: background 0.3s ease-in-out;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-weight: bold;
 }
 
@@ -143,7 +143,7 @@ p {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     z-index: 1000; 
     width: 90%; 
-    max-width: 450px; 
+    max-width: 55%; 
     text-align: center;
 }
 .ventana p {
