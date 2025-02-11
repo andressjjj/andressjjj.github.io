@@ -54,7 +54,8 @@ h1 {
 }
 p {
     font-size: 1.05rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif,'Times New Roman', Times, serif;
+    font-weight: 500;
     color: #555;
     line-height: 1.8;
     animation: textoFadeIn 2s ease-in-out;
@@ -111,7 +112,7 @@ p {
     font-size: 1.05rem;
     margin-top: 0.5rem;
     transition: background 0.3s ease-in-out;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif,'Times New Roman', Times, serif;
     font-weight: bold;
 }
 
