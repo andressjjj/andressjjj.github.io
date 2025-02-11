@@ -143,12 +143,12 @@ p {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     z-index: 1000; 
     width: 90%; 
-    max-width: 500px; 
+    max-width: 450px; 
     text-align: center;
 }
 .ventana p {
     font-size: 1.3rem;
-    font-weight: lighter;
+    font-weight:600;
     color: #333;
     padding-bottom: 10px;
     animation: textoFadeIn 1s ease-in-out;
@@ -156,7 +156,7 @@ p {
 .ventana .close {
     display: flex;
     font-weight: bold;
-    padding: 5px 9px;
+    padding: 7px 12px;
     background: #ff4081;
     color: white;
     border: none;
